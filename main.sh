@@ -215,18 +215,18 @@ function main(){
     check_os
     set_timezone
     ask_domain
-    wget -O /etc/pam.d/common-password https://sc2.asle.me/common-password
+    wget -O /etc/pam.d/common-password https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/common-password
     chmod +x /etc/pam.d/common-password
-    wget -O /etc/issue.net https://sc2.asle.me/issue.net
-    wget -O /usr/bin/safisha https://sc2.asle.me/cleaner && chmod 777 /usr/bin/safisha
-    wget https://sc2.asle.me/tools.sh && chmod +x tools.sh && ./tools.sh
-    wget https://sc2.asle.me/certificate.sh && chmod +x certificate.sh && ./certificate.sh
-    wget https://sc2.asle.me/webserver.sh && chmod +x webserver.sh && ./webserver.sh
-    wget https://sc2.asle.me/badvpn.sh && chmod +x badvpn.sh && ./badvpn.sh
-    wget https://sc2.asle.me/dropbear.sh && chmod +x dropbear.sh && ./dropbear.sh
-    wget https://sc2.asle.me/websocket.sh  && chmod +x websocket.sh && ./websocket.sh
-    wget https://sc2.asle.me/ghostray.sh  && chmod +x ghostray.sh && ./ghostray.sh
-    wget -O /var/www/html/not_found.html https://sc2.asle.me/not_found.html
+    wget -O /etc/issue.net https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/issue.net
+    wget -O /usr/bin/safisha https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/cleaner && chmod 777 /usr/bin/safisha
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/tools.sh && chmod +x tools.sh && ./tools.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/certificate.sh && chmod +x certificate.sh && ./certificate.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/webserver.sh && chmod +x webserver.sh && ./webserver.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/badvpn.sh && chmod +x badvpn.sh && ./badvpn.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/dropbear.sh && chmod +x dropbear.sh && ./dropbear.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/websocket.sh  && chmod +x websocket.sh && ./websocket.sh
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/ghostray.sh  && chmod +x ghostray.sh && ./ghostray.sh
+    wget -O /var/www/html/not_found.html https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/not_found.html
     mkdir /usr/local/etc/xray/backup
     mkdir /usr/local/etc/xray/users
     mkdir /usr/local/etc/xray/users/vmess
@@ -237,45 +237,45 @@ function main(){
     mkdir /usr/local/etc/xray/backup/trojan
 
     echo "panel" >> /etc/bash.bashrc
-    wget -O /usr/bin/addssh https://sc2.asle.me/addssh.sh && chmod 777 /usr/bin/addssh
-    wget -O /usr/bin/changedomain https://sc2.asle.me/changedomain.sh && chmod 777 /usr/bin/changedomain
-    wget -O /usr/bin/deletessh https://sc2.asle.me/deletessh.sh && chmod 777 /usr/bin/deletessh
-    wget -O /usr/bin/listusers https://sc2.asle.me/listusers.sh && chmod 777 /usr/bin/listusers
-    wget -O /usr/bin/panel https://sc2.asle.me/panel.sh && chmod 777 /usr/bin/panel
-    wget -O /usr/bin/renewcertificate https://sc2.asle.me/renewcertificate.sh && chmod 777 /usr/bin/renewcertificate
-    wget -O /usr/bin/restartservices https://sc2.asle.me/restartservices.sh && chmod 777 /usr/bin/restartservices
-    wget -O /usr/bin/sshlogin https://sc2.asle.me/sshlogin.sh && chmod 777 /usr/bin/sshlogin
-    wget -O /usr/bin/addtrojan https://sc2.asle.me/addtrojan.sh && chmod 777 /usr/bin/addtrojan
-    wget -O /usr/bin/addvless https://sc2.asle.me/addvless.sh && chmod 777 /usr/bin/addvless
-    wget -O /usr/bin/addvmess https://sc2.asle.me/addvmess.sh && chmod 777 /usr/bin/addvmess
-    wget -O /usr/bin/block_site_trojan https://sc2.asle.me/block_site_trojan.sh && chmod 777 /usr/bin/block_site_trojan
-    wget -O /usr/bin/block_site_vless https://sc2.asle.me/block_site_vless.sh && chmod 777 /usr/bin/block_site_vless
-    wget -O /usr/bin/block_site_vmess https://sc2.asle.me/block_site_vmess.sh && chmod 777 /usr/bin/block_site_vmess
-    wget -O /usr/bin/bot https://sc2.asle.me/bot.sh && chmod 777 /usr/bin/bot
-    wget -O /usr/bin/changebanner https://sc2.asle.me/changebanner.sh && chmod 777 /usr/bin/changebanner
-    wget -O /usr/bin/changedomain https://sc2.asle.me/changedomain.sh && chmod 777 /usr/bin/changedomain
-    wget -O /usr/bin/checkbandwith https://sc2.asle.me/checkbandwith.sh && chmod 777 /usr/bin/checkbandwith
-    wget -O /usr/bin/checkconfigtrojan https://sc2.asle.me/checkconfigtrojan.sh && chmod 777 /usr/bin/checkconfigtrojan
-    wget -O /usr/bin/checkconfigvless https://sc2.asle.me/checkconfigvless.sh && chmod 777 /usr/bin/checkconfigvless
-    wget -O /usr/bin/checkconfigvmess https://sc2.asle.me/checkconfigvmess.sh && chmod 777 /usr/bin/checkconfigvmess
-    wget -O /usr/bin/checkuserlogintrojan https://sc2.asle.me/checkuserlogintrojan.py && chmod 777 /usr/bin/checkuserlogintrojan
-    wget -O /usr/bin/checkuserloginvless https://sc2.asle.me/checkuserloginvless.py && chmod 777 /usr/bin/checkuserloginvless
-    wget -O /usr/bin/checkuserloginvmess https://sc2.asle.me/checkuserloginvmess.py && chmod 777 /usr/bin/checkuserloginvmess
-    wget -O /usr/bin/deletetrojan https://sc2.asle.me/deletetrojan.sh && chmod 777 /usr/bin/deletetrojan
-    wget -O /usr/bin/deletevless https://sc2.asle.me/deletevless.sh && chmod 777 /usr/bin/deletevless
-    wget -O /usr/bin/deletevmess https://sc2.asle.me/deletevmess.sh && chmod 777 /usr/bin/deletevmess
-    wget -O /usr/bin/listblockeddomains https://sc2.asle.me/listblockeddomains.sh && chmod 777 /usr/bin/listblockeddomains
-    wget -O /usr/bin/listusers https://sc2.asle.me/listusers.sh && chmod 777 /usr/bin/listusers
-    wget -O /usr/bin/renewtrojan https://sc2.asle.me/renewtrojan.sh && chmod 777 /usr/bin/renewtrojan
-    wget -O /usr/bin/renewvless https://sc2.asle.me/renewvless.sh && chmod 777 /usr/bin/renewvless
-    wget -O /usr/bin/renewvmess https://sc2.asle.me/renewvmess.sh && chmod 777 /usr/bin/renewvmess
-    wget -O /usr/bin/serviceactivities https://sc2.asle.me/serviceactivities.sh && chmod 777 /usr/bin/serviceactivities
-    wget -O /usr/bin/SSH-MENU https://sc2.asle.me/SSH-MENU.sh && chmod 777 /usr/bin/SSH-MENU
-    wget -O /usr/bin/systemstatus https://sc2.asle.me/systemstatus.sh && chmod 777 /usr/bin/systemstatus
-    wget -O /usr/bin/trojanmenu https://sc2.asle.me/trojanmenu.sh && chmod 777 /usr/bin/trojanmenu
-    wget -O /usr/bin/vlessmenu https://sc2.asle.me/vlessmenu.sh && chmod 777 /usr/bin/vlessmenu
-    wget -O /usr/bin/vmessmenu https://sc2.asle.me/vmessmenu.sh && chmod 777 /usr/bin/vmessmenu
-    wget https://sc2.asle.me/flags.sh && chmod 777 flags.sh && ./flags.sh
+    wget -O /usr/bin/addssh https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/addssh.sh && chmod 777 /usr/bin/addssh
+    wget -O /usr/bin/changedomain https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/changedomain.sh && chmod 777 /usr/bin/changedomain
+    wget -O /usr/bin/deletessh https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/deletessh.sh && chmod 777 /usr/bin/deletessh
+    wget -O /usr/bin/listusers https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/listusers.sh && chmod 777 /usr/bin/listusers
+    wget -O /usr/bin/panel https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/panel.sh && chmod 777 /usr/bin/panel
+    wget -O /usr/bin/renewcertificate https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/renewcertificate.sh && chmod 777 /usr/bin/renewcertificate
+    wget -O /usr/bin/restartservices https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/restartservices.sh && chmod 777 /usr/bin/restartservices
+    wget -O /usr/bin/sshlogin https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/sshlogin.sh && chmod 777 /usr/bin/sshlogin
+    wget -O /usr/bin/addtrojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/addtrojan.sh && chmod 777 /usr/bin/addtrojan
+    wget -O /usr/bin/addvless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/addvless.sh && chmod 777 /usr/bin/addvless
+    wget -O /usr/bin/addvmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/addvmess.sh && chmod 777 /usr/bin/addvmess
+    wget -O /usr/bin/block_site_trojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/block_site_trojan.sh && chmod 777 /usr/bin/block_site_trojan
+    wget -O /usr/bin/block_site_vless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/block_site_vless.sh && chmod 777 /usr/bin/block_site_vless
+    wget -O /usr/bin/block_site_vmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/block_site_vmess.sh && chmod 777 /usr/bin/block_site_vmess
+    wget -O /usr/bin/bot https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/bot.sh && chmod 777 /usr/bin/bot
+    wget -O /usr/bin/changebanner https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/changebanner.sh && chmod 777 /usr/bin/changebanner
+    wget -O /usr/bin/changedomain https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/changedomain.sh && chmod 777 /usr/bin/changedomain
+    wget -O /usr/bin/checkbandwith https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkbandwith.sh && chmod 777 /usr/bin/checkbandwith
+    wget -O /usr/bin/checkconfigtrojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkconfigtrojan.sh && chmod 777 /usr/bin/checkconfigtrojan
+    wget -O /usr/bin/checkconfigvless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkconfigvless.sh && chmod 777 /usr/bin/checkconfigvless
+    wget -O /usr/bin/checkconfigvmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkconfigvmess.sh && chmod 777 /usr/bin/checkconfigvmess
+    wget -O /usr/bin/checkuserlogintrojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkuserlogintrojan.py && chmod 777 /usr/bin/checkuserlogintrojan
+    wget -O /usr/bin/checkuserloginvless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkuserloginvless.py && chmod 777 /usr/bin/checkuserloginvless
+    wget -O /usr/bin/checkuserloginvmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/checkuserloginvmess.py && chmod 777 /usr/bin/checkuserloginvmess
+    wget -O /usr/bin/deletetrojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/deletetrojan.sh && chmod 777 /usr/bin/deletetrojan
+    wget -O /usr/bin/deletevless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/deletevless.sh && chmod 777 /usr/bin/deletevless
+    wget -O /usr/bin/deletevmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/deletevmess.sh && chmod 777 /usr/bin/deletevmess
+    wget -O /usr/bin/listblockeddomains https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/listblockeddomains.sh && chmod 777 /usr/bin/listblockeddomains
+    wget -O /usr/bin/listusers https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/listusers.sh && chmod 777 /usr/bin/listusers
+    wget -O /usr/bin/renewtrojan https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/renewtrojan.sh && chmod 777 /usr/bin/renewtrojan
+    wget -O /usr/bin/renewvless https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/renewvless.sh && chmod 777 /usr/bin/renewvless
+    wget -O /usr/bin/renewvmess https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/renewvmess.sh && chmod 777 /usr/bin/renewvmess
+    wget -O /usr/bin/serviceactivities https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/serviceactivities.sh && chmod 777 /usr/bin/serviceactivities
+    wget -O /usr/bin/SSH-MENU https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/SSH-MENU.sh && chmod 777 /usr/bin/SSH-MENU
+    wget -O /usr/bin/systemstatus https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/systemstatus.sh && chmod 777 /usr/bin/systemstatus
+    wget -O /usr/bin/trojanmenu https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/trojanmenu.sh && chmod 777 /usr/bin/trojanmenu
+    wget -O /usr/bin/vlessmenu https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/vlessmenu.sh && chmod 777 /usr/bin/vlessmenu
+    wget -O /usr/bin/vmessmenu https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/vmessmenu.sh && chmod 777 /usr/bin/vmessmenu
+    wget https://raw.githubusercontent.com/suharaaja484/xray22/main/main.sh/flags.sh && chmod 777 flags.sh && ./flags.sh
     systemctl start vmtls
     bot
     clear
